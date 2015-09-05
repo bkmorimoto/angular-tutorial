@@ -1,0 +1,1 @@
+Going through the tutorial at https://thinkster.io/angular-rails/
