@@ -3,9 +3,22 @@
     <title>My Angular App!</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
     <script src="app.js"></script>
     <style> .glyphicon-thumbs-up { cursor:pointer } </style>
   </head>
+  <script type="text/ng-template" id="/home.html">
+    <div class="page-header">
+      <h1>Flapper News</h1>
+    </div>
+    <body ng-app="flapperNews">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <ui-view></ui-view>
+        </div>
+      </div>
+    </body>
+  </script>
   <body ng-app="flapperNews" ng-controller="MainCtrl">
     <div class="container">
       <div class="row">
